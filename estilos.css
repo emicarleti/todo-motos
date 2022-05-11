@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: rgb(200, 200, 200);
+    font-family: sans-serif;
+    color: black;
+}
+
+.seccion {
+    width: 100%;
+    padding: 1rem;
+}
+
+.seccion_titulo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.grid_texto {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(185, 185, 185);
+    color: black;
+    padding: 0.5rem 1rem;
+}
+
+.grid {
+    padding: 1rem;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.grid_hijo {
+    border: 2px solid rgb(0, 20, 0);
+    position: relative;
+}
+
+.grid_hijo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    background: rgb(35, 133, 35);
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 100px;
+}
+
+nav {
+    background: rgb(155, 236, 155);
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a {
+    color: rgb(15, 15, 15);
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#content {
+    width: 80%;
+    height: 560px;
+    padding: 20px;
+    float: left;
+
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+#motos {
+    margin: 16px;
+    padding: 16px;
+}
+
+#servicios {
+    margin: 25px;
+    padding: 25px;
+}
+
+#donde {
+    margin: 25px;
+    padding: 25px;
+}
+
+#preguntas {
+    margin: 25px;
+    padding: 25px;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+        background-color: rgb(85, 167, 101);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: rgb(55, 93, 55);
+    }
+}
