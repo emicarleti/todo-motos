@@ -35,6 +35,7 @@ body {
     grid-template-columns: auto auto auto;
     column-gap: 15px;
     row-gap: 15px;
+    width: 1000px;
 }
 
 .grid_hijo {
@@ -55,6 +56,17 @@ header {
     margin: 0px auto;
     text-align: center;
     line-height: 100px;
+    animation-name: cambiarColor;
+    animation-duration: 4s;
+}
+
+h6 {
+    color: black;
+    border: 3px white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    font-size: 50px;
 }
 
 nav {
@@ -93,10 +105,9 @@ footer {
     background: black;
     color: white;
     text-align: center;
-   position: fixed;
-   width: 100%;
-   bottom: 0;
-   height: 20px;
+    width: 100%;
+    bottom: 0;
+    height: 20px;
 }
 
 #motos {
@@ -131,5 +142,15 @@ footer {
 @media screen and (max-width: 600px) {
     header {
         background-color: rgb(55, 93, 55);
+    }
+}
+
+@keyframes cambiarColor {
+    0% {
+        background-color: beige;
+    }
+
+    100% {
+        background-color: green;
     }
 }
