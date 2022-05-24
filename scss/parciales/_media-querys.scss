@@ -1,0 +1,22 @@
+@media screen and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+        background-color: rgb(85, 167, 101);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        background-color: rgb(55, 93, 55);
+    }
+}
+
+@keyframes cambiarColor {
+    0% {
+        background-color: beige;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
