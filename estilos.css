@@ -127,14 +127,7 @@ nav ul li {
 
 }
 
-footer {
-    background: black;
-    color: white;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    height: 20px;
-}
+
 
 #motos {
     margin: 16px;
@@ -188,8 +181,15 @@ iframe {
 
     padding: 30px;
 }
-
-
+footer {
+  background: rgb(35, 133, 35);
+  padding: 30px;
+  width: 100%;
+  border: radius 0;
+  position: relative;
+  margin-top: 50px;
+  text-align: center;
+}
 @media screen and (max-width: 1023px) {
     header {
         flex-direction: column;
