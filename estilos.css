@@ -10,6 +10,11 @@ body {
     color: black;
 }
 
+.contenedorr {
+    width: 100%;
+    margin:0 auto;
+}
+
 .seccion {
     width: 100%;
     padding: 1rem;
@@ -36,19 +41,20 @@ body {
     grid-template-columns: auto auto auto;
     column-gap: 15px;
     row-gap: 15px;
-    width: 1000px;
+    width: 900px;
 
 }
 
 .gridd {
     padding: 1rem;
-    min-height: 400px;
+    min-height: 350px;
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 15px;
     row-gap: 15px;
-    width: 1650px;
-    margin: 40px;
+    width: 800px;
+    margin: 30px;
+    
 
 }
 
@@ -73,6 +79,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 header {
@@ -102,6 +109,10 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+
 }
 
 a {
@@ -190,18 +201,21 @@ footer {
   margin-top: 50px;
   text-align: center;
 }
-@media screen and (max-width: 1023px) {
-    header {
-        flex-direction: column;
-        background-color: rgb(85, 167, 101);
-    }
-}
+@media screen and (max-width: 1023px) {}
+    
+    
 
-@media screen and (max-width: 600px) {
+
+@media only screen and (max-width: 600px) {
     header {
         background-color: rgb(55, 93, 55);
+        
     }
+   
+  
 }
+@media only screen and (max-width: 768px) {}
+
 
 @keyframes cambiarColor {
     0% {
